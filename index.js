@@ -1,39 +1,38 @@
 let unit;
-let get_value=document.getElementById(unit).value;
 let res_value=document.getElementsByClassName("result");
 document.getElementById('celcius').onchange = function () {
     unit = 'celcius';
-    let cel = parseFloat(get_value);
 };
 document.getElementById('farenheit').onchange = function () {
     unit = 'farenheit';
-    let far = parseFloat(get_value);
 };
 document.getElementById('kelvin').onchange = function () {
-    unit = 'kelvin';
-    let kel=parseFloat(get_value);
+    unit = 'kelvin'; 
 };
 
 function reset() {
-    res_value[0].innerHTML ="";
-    res_value[1].innerHTML ="";
-    res_value[2].innerHTML ="";
-    get_value="";
+    (res_value)[0].innerHTML ="";
+    (res_value)[1].innerHTML ="";
+    (res_value)[2].innerHTML ="";
+    document.getElementById(unit).value="";
 }
 let cel_value, far_value, kel_value;
 
 function convert() {
     if (unit === 'celcius') {
+        var cel = parseFloat(document.getElementById(unit).value);
         cel_value=cel;
         far_value = cel * 9 / 5 + 32;
         kel_value =cel + 273;
     }
     else if (unit === 'farenheit') {
+        var far = parseFloat(document.getElementById(unit).value);
         cel_value = (far - 32) * 5 / 9;
         far_value=far;
         kel_value = cel_value + 273;
     }
     else if (unit === 'kelvin') {
+        var kel=parseFloat(document.getElementById(unit).value);
         cel_value = kel - 273;
         far_value = cel_value * 9 / 5 + 32;
         kel_value=kel;
