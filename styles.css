@@ -1,0 +1,73 @@
+body{
+    margin:0 auto;
+    box-sizing: border-box;
+    height:100vh;
+    background-color: rgb(248, 246, 239);
+}
+.title{
+    font-size:50px;
+    padding-top:10px;
+    padding-bottom: 0;
+    font-family: monospace;
+    text-align:center;
+
+}
+.container{
+    padding: 0 10px;
+    margin:50px auto;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+.row{
+    background-color: rgb(238, 239, 238);
+    border: 5px solid white;
+    border-radius:15px;
+    height: 80vh;
+    display:flex;
+    vertical-align: middle;
+    box-shadow: 2px 3px 25px 1px rgb(154, 154, 154);
+
+}
+.card{
+    line-height: 1.5;
+    background-color: rgb(244, 206, 149);
+    border-radius: 10px;
+    /* border:5px solid rgb(252, 186, 99); */
+
+    box-shadow: 3px 3px 5px rgb(202, 201, 201);
+    margin: 40px auto;
+}
+.card-title{
+    text-align: center;
+    padding-bottom: 30px;
+    font-size:35px;
+}
+.card-text{
+    padding-bottom:20px;
+}
+.card-body .res{
+    font-size: 25px;
+    font-style: bold;
+    font-weight:800;
+    color:rgb(3, 3, 3);
+}
+.card{
+    margin-bottom:0;
+}
+.res{
+    text-align:center;
+    padding:0;
+    margin:0 auto;
+}
+.result{
+    font-size:20px;
+    font-family: sans-serif;
+    font-weight:500;
+}
+button{
+    height:50px;
+    margin:20px;
+    box-shadow: 3px 3px 5px rgb(202, 201, 201);
+
+}
